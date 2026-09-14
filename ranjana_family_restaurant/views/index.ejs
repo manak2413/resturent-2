@@ -12,7 +12,8 @@
         rel="stylesheet">
     <!-- Icon font (Font Awesome) -  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="/style.css">
+   
 </head>
 
 <body>
@@ -97,21 +98,21 @@
             <h2>Popular Dishes</h2>
             <div class="dish-grid" id="dishGrid">
                 <div class="dish-card">
-                    <div class="img-wrap"><img src="./image/pasta.jpg" alt="Creamy Pasta"></div>
+                    <div class="img-wrap"><img src="./image/Cake.jpg" alt="Creamy Pasta"></div>
                     <div class="dish-info">
                         <h4>Creamy Pasta</h4>
                         <p>Rich & Creamy Alfredo</p><span class="price">₹299</span>
                     </div>
                 </div>
                 <div class="dish-card">
-                    <div class="img-wrap"><img src="./image/images.jpg" alt="Classic Burger"></div>
+                    <div class="img-wrap"><img src="./image/Burger.jpg" alt="Classic Burger"></div>
                     <div class="dish-info">
                         <h4>Classic Burger</h4>
                         <p>Cheesy & Delicious</p><span class="price">₹249</span>
                     </div>
                 </div>
                 <div class="dish-card">
-                    <div class="img-wrap"><img src=" ./image/images (1).jpg" alt="Margherita Pizza"></div>
+                    <div class="img-wrap"><img src="./image/pizza.jpg" alt="Margherita Pizza"></div>
                     <div class="dish-info">
                         <h4>Margherita Pizza</h4>
                         <p>Fresh & Cheesy</p><span class="price">₹349</span>
@@ -128,28 +129,28 @@
 
             <div class="dish-grid extra-dishes" id="extraDishes">
                 <div class="dish-card">
-                    <div class="img-wrap"><img src="./image/paneer-tikka.jpg" alt="Paneer Tikka"></div>
+                    <div class="img-wrap"><img src="./image/images (1).jpg" alt="Paneer Tikka"></div>
                     <div class="dish-info">
                         <h4>Paneer Tikka</h4>
                         <p>Smoky & Spiced</p><span class="price">₹229</span>
                     </div>
                 </div>
                 <div class="dish-card">
-                    <div class="img-wrap"><img src="./image/dal-makhani.jpg" alt="Dal Makhani"></div>
+                    <div class="img-wrap"><img src="./image/pasta.jpg" alt="Dal Makhani"></div>
                     <div class="dish-info">
                         <h4>Dal Makhani</h4>
                         <p>Slow Cooked & Buttery</p><span class="price">₹219</span>
                     </div>
                 </div>
                 <div class="dish-card">
-                    <div class="img-wrap"><img src="./image/biryani.jpg" alt="Veg Biryani"></div>
+                    <div class="img-wrap"><img src="./image/Cake.jpg" alt="Veg Biryani"></div>
                     <div class="dish-info">
                         <h4>Veg Biryani</h4>
                         <p>Aromatic & Flavourful</p><span class="price">₹249</span>
                     </div>
                 </div>
                 <div class="dish-card">
-                    <div class="img-wrap"><img src="./image/cold-coffee.jpg" alt="Cold Coffee"></div>
+                    <div class="img-wrap"><img src="./image/images (1).jpg" alt="Cold Coffee"></div>
                     <div class="dish-info">
                         <h4>Cold Coffee</h4>
                         <p>Chilled & Creamy</p><span class="price">₹129</span>
@@ -165,12 +166,12 @@
         <div class="container">
             <h2>Gallery</h2>
             <div class="gallery-grid">
-                <div class="g-item"><img src="./image/Cake.jpg" alt="gallery photo 1"></div>
-                <div class="g-item"><img src="./image/images.jpg" alt="gallery photo 2"></div>
-                <div class="g-item"><img src="./image/images (1).jpg" alt="gallery photo 3"></div>
-                <div class="g-item"><img src="./image/pasta.jpg" alt="gallery photo 4"></div>
-                <div class="g-item"><img src="./image/images (1).jpg" alt="gallery photo 5"></div>
-                <div class="g-item"><img src="./image/Cake.jpg" alt="gallery photo 6"></div>
+                <div class="g-item"><img src="" alt="gallery photo 1"></div>
+                <div class="g-item"><img src="" alt="gallery photo 2"></div>
+                <div class="g-item"><img src="" alt="gallery photo 3"></div>
+                <div class="g-item"><img src="" alt="gallery photo 4"></div>
+                <div class="g-item"><img src="" alt="gallery photo 5"></div>
+                <div class="g-item"><img src="" alt="gallery photo 6"></div>
             </div>
         </div>
     </section>
@@ -186,35 +187,35 @@
                     <li><span class="ic"><i class="fa-solid fa-utensils"></i></span>Enjoy your meal</li>
                 </ul>
             </div>
-            <form class="res-form" onsubmit="event.preventDefault(); alert('Thank you! Your table has been booked.');">
+               <form class="res-form" id="reservationForm">   
                 <div class="form-row">
                     <div class="field">
                         <i class="fa-solid fa-calendar-days"></i>
-                        <input type="date" required>
+                        <input type="date" id="date" required>
                     </div>
                     <div class="field">
                         <i class="fa-solid fa-clock"></i>
-                        <input type="time" required>
+                        <input type="time" id="time" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="field">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text"  id="name" placeholder="Your Name" required>
                     </div>
                     <div class="field">
                         <i class="fa-solid fa-phone"></i>
-                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
                     </div>
                 </div>
                 <div class="field field-full" style="margin-bottom:16px;">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Email Address" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
                 </div>
                 <div class="form-actions">
                     <div class="field">
                         <i class="fa-solid fa-user-group"></i>
-                        <select>
+                        <select id="guests" required>
                             <option>Number of Guests</option>
                             <option>1-2 Guests</option>
                             <option>3-4 Guests</option>
@@ -397,6 +398,61 @@
             link.addEventListener('click', closeMenu);
         });
     </script>
+    
+
+    <script>
+
+   // mobile menu code
+
+
+  
+    const reservationForm = document.getElementById("reservationForm");
+
+    reservationForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const email = document.getElementById("email").value;
+        const guests = document.getElementById("guests").value;
+
+        try {
+            const response = await fetch(
+                "http://localhost:5000/api/reservations",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        date,
+                        time,
+                        name,
+                        phone,
+                        email,
+                        guests
+                    })
+                }
+            );
+
+            const data = await response.json();
+
+            if (data.success) {
+                alert("Thank you! Your table has been booked successfully.");
+                reservationForm.reset();
+            } else {
+                alert("Reservation failed.");
+            }
+
+        } catch (error) {
+            console.log(error);
+            alert("Server se connection nahi ho raha.");
+        }
+    });
+
+</script>
 
 </body>
 

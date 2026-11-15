@@ -34,7 +34,7 @@ mongoose
 
 // Home page
 app.get("/", (req, res) => {
-    res.render("index");
+    res.render('index');
 });
 
 // Reservation API

@@ -6,7 +6,7 @@ import Reservation from "./models/Reservation.js";
 
 const app = express();
 
-const PORT = 5000;
+const PORT = 500;
 
 // Middleware
 app.use(cors());
@@ -34,7 +34,7 @@ mongoose
 
 // Home page
 app.get("/", (req, res) => {
-    res.render('index');
+    res.render("index");
 });
 
 // Reservation API
